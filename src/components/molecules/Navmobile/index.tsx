@@ -18,16 +18,7 @@ const Index = () => {
         >
           <Icon icon={`${open ? 'ic:baseline-close' : 'ic:outline-menu'}`} width='24' height='24' />
         </button>
-        {/*         {open && (
-          <button
-            onClick={() => {
-              setOpen(!open);
-            }}
-            className='hover:cursor-pointer hover:bg-gray-200 text-secondary hover:text-primary  p-2'
-          >
-            <Icon icon='ic:baseline-close' width='24' height='24' color='#2d314d' />
-          </button>
-        )} */}
+        
       </div>
       {open && (
         <div className='bg-white shadow-md  w-5/6 p-5 absolute inset-x-10 top-20 rounded-md '>
