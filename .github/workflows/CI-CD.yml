@@ -2,10 +2,10 @@ name: Continuos Integration and Deployment
 on:
     push:
         branches:
-            -main
+            - main
 env:
     VERCEL_TOKEN: ${{secrets.VERCEL_TOKEN}}
-    VERCEL_ORG_ID: ${{secrets.VERGEL_ORG_ID}}
+    VERCEL_ORG_ID: ${{secrets.VERCEL_ORG_ID}}
     VERCEL_PROJECT_ID: ${{secrets.VERCEL_PROJECT_ID}}
 jobs:
     Build:
@@ -13,7 +13,7 @@ jobs:
         if: github.ref == 'refs/heads/main'
         steps:
             - name: Install Node.js 22.x
-              uses: actions/setup-node@v3
+              uses: actions/setup-node@v2
               with:
                 node-version: 22.x
             - name: Install Dependencies
